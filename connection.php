@@ -2,11 +2,11 @@
 
 function openConnection() {
     $dbhost = "localhost";
-    $dbuser = "root";
-    $dbpass = "";
-    $db = "shoe_store";
+    $dbusername = "root1";
+    $dbpassword = "";
+    $database = "shoe_store";
 
-    $conn = new mysqli($dbhost, $dbuser, $dbpass, $db);
+    $conn = new mysqli($dbhost, $dbusername, $dbpassword, $database);
 
     // Check connection
     if ($conn->connect_error) {
@@ -15,3 +15,5 @@ function openConnection() {
 
     return $conn;
 }
+
+?>
